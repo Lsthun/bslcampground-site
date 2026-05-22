@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles.css?v=20260522b" />
   </head>
   <body>
     <div class="page-shell">
@@ -100,6 +100,30 @@
           </aside>
         </section>
 
+        <section class="section site-map" aria-labelledby="site-map-title">
+          <div class="site-map__intro">
+            <div class="section__intro site-map__copy">
+              <p class="eyebrow">Campground Map</p>
+              <h2 id="site-map-title">Preview the campground layout before you book.</h2>
+
+            </div>
+          </div>
+
+          <button
+            class="site-map__preview"
+            type="button"
+            data-map-open
+            aria-label="Open the Bay St. Louis Campground site map in a full-screen viewer"
+          >
+            <img
+              src="./assets/campground-site-map.png"
+              alt="Site map of Bay St. Louis Campground showing numbered sites and campground roads"
+              loading="lazy"
+            />
+            <span class="site-map__preview-badge">Tap or click to enlarge</span>
+          </button>
+        </section>
+
         <section class="value-strip" aria-label="Why guests stay here">
           <article>
             <h2>Close to everything</h2>
@@ -130,15 +154,36 @@
           </div>
 
           <div class="amenities-grid">
-            <article class="amenity">
+            <article class="amenity amenity--with-image">
+              <figure class="amenity__media">
+                <img
+                  src="./assets/campground-sites.png"
+                  alt="Full-hookup RV sites at Bay St. Louis Campground"
+                  loading="lazy"
+                />
+              </figure>
               <h3>All Hookups Included</h3>
               <p>Water, sewer, electricity, and Wi-Fi are built into every rate.</p>
             </article>
-            <article class="amenity">
+            <article class="amenity amenity--with-image">
+              <figure class="amenity__media">
+                <img
+                  src="./assets/campground-pool.png"
+                  alt="Campground pool area at Bay St. Louis Campground"
+                  loading="lazy"
+                />
+              </figure>
               <h3>Pool Access</h3>
               <p>Cool off after the beach or give the kids a steady vacation favorite.</p>
             </article>
-            <article class="amenity">
+            <article class="amenity amenity--with-image">
+              <figure class="amenity__media">
+                <img
+                  src="./assets/campground-fishing-pond.png"
+                  alt="Fishing pond at Bay St. Louis Campground"
+                  loading="lazy"
+                />
+              </figure>
               <h3>Fishing Pond</h3>
               <p>Enjoy a catch-and-release pond right on site for a quieter afternoon.</p>
             </article>
@@ -342,7 +387,7 @@
 
         <section class="section contact" id="contact">
           <div class="contact-panel">
-            <div>
+            <div class="contact-panel__content">
               <p class="eyebrow">Plan Your Stay</p>
               <h2>Book your spot and start your Gulf Coast getaway.</h2>
               <p class="contact-panel__text">
@@ -350,16 +395,32 @@
                 campground directly. This redesign keeps the call-to-book flow
                 simple and front-and-center.
               </p>
+
+              <div class="contact-actions">
+                <a class="button button--primary" href="tel:12284672080">(228) 467-2080</a>
+                <a
+                  class="button button--ghost"
+                  href="https://www.google.com/maps/place/Bay+St+Louis+Campground/@30.3139992,-89.3537519,973m/data=!3m1!1e3!4m15!1m8!3m7!1s0x889c2da34d292a5f:0x4c82cb242f19c4a0!2s814+US-90,+Bay+St+Louis,+MS+39520!3b1!8m2!3d30.3141997!4d-89.3508532!16s%2Fg%2F11b8v4gvhv!3m5!1s0x889c2da330913efd:0xfc19d4c4cbeead78!8m2!3d30.3137503!4d-89.3518966!16s%2Fg%2F1tf5fjk_?entry=ttu&g_ep=EgoyMDI2MDQwOC4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >Get Directions</a>
+              </div>
             </div>
 
-            <div class="contact-actions">
-              <a class="button button--primary" href="tel:12284672080">(228) 467-2080</a>
-              <a
-                class="button button--ghost"
-                href="https://www.google.com/maps/place/Bay+St+Louis+Campground/@30.3139992,-89.3537519,973m/data=!3m1!1e3!4m15!1m8!3m7!1s0x889c2da34d292a5f:0x4c82cb242f19c4a0!2s814+US-90,+Bay+St+Louis,+MS+39520!3b1!8m2!3d30.3141997!4d-89.3508532!16s%2Fg%2F11b8v4gvhv!3m5!1s0x889c2da330913efd:0xfc19d4c4cbeead78!8m2!3d30.3137503!4d-89.3518966!16s%2Fg%2F1tf5fjk_?entry=ttu&g_ep=EgoyMDI2MDQwOC4wIKXMDSoASAFQAw%3D%3D"
-                target="_blank"
-                rel="noopener noreferrer"
-              >Get Directions</a>
+            <div class="contact-panel__aside">
+              <button
+                class="site-map__preview site-map__preview--contact"
+                type="button"
+                data-map-open
+                aria-label="Open the Bay St. Louis Campground site map while booking"
+              >
+                <img
+                  src="./assets/campground-site-map.png"
+                  alt="Site map of Bay St. Louis Campground showing numbered sites and campground roads"
+                  loading="lazy"
+                />
+                <span class="site-map__preview-badge">View map</span>
+              </button>
             </div>
           </div>
         </section>
@@ -381,8 +442,38 @@
       <a href="#contact">Contact</a>
     </nav>
 
+    <div class="lightbox" id="site-map-lightbox" hidden aria-hidden="true">
+      <button class="lightbox__backdrop" type="button" data-map-close aria-label="Close map viewer"></button>
+
+      <div class="lightbox__dialog" role="dialog" aria-modal="true" aria-labelledby="site-map-lightbox-title">
+        <div class="lightbox__toolbar">
+          <p class="lightbox__eyebrow" id="site-map-lightbox-title">Campground Site Map</p>
+
+          <div class="lightbox__actions">
+            <a
+              class="button button--ghost lightbox__button"
+              href="./assets/campground-site-map.png"
+              download="bay-st-louis-campground-site-map.png"
+            >Download Map</a>
+            <button class="button button--secondary lightbox__button" type="button" data-map-close>Close</button>
+          </div>
+        </div>
+
+        <div class="lightbox__content" data-map-viewport>
+          <div class="lightbox__canvas" data-map-canvas>
+            <img
+              src="./assets/campground-site-map.png"
+              alt="Site map of Bay St. Louis Campground showing numbered sites and campground roads"
+              data-map-image
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="./attractions-feed.js"></script>
     <script src="./analytics.js" defer></script>
     <script src="./attractions.js" defer></script>
+    <script src="./map-lightbox.js?v=20260522b" defer></script>
   </body>
 </html>
