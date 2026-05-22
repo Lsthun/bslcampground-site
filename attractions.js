@@ -406,10 +406,10 @@ document.addEventListener("DOMContentLoaded", async () => {
   function renderAgenda() {
     const locationItems = getLocationItems();
     const itemsByDate = getItemsByDate(locationItems);
-    const weekStart = getWeekStart(weekAnchorDate);
+    const agendaStart = new Date(weekAnchorDate);
     const weekDates = Array.from({ length: 7 }, (_, index) => {
-      const nextDate = new Date(weekStart);
-      nextDate.setDate(weekStart.getDate() + index);
+      const nextDate = new Date(agendaStart);
+      nextDate.setDate(agendaStart.getDate() + index);
       return nextDate;
     });
 
