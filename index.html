@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=20260522b" />
+    <link rel="stylesheet" href="./styles.css?v=20260531h" />
   </head>
   <body>
     <div class="page-shell">
@@ -49,7 +49,8 @@
 
             <div class="hero__actions">
               <a class="button button--primary" href="tel:12284672080">Call to Book</a>
-              <a class="button button--secondary" href="#rates">See Rates</a>
+              <button class="button button--secondary" type="button" data-reservation-open>Booking Request</button>
+              <a class="button button--ghost" href="#rates">See Rates</a>
             </div>
 
             <figure class="hero__sign">
@@ -391,13 +392,15 @@
               <p class="eyebrow">Plan Your Stay</p>
               <h2>Book your spot and start your Gulf Coast getaway.</h2>
               <p class="contact-panel__text">
-                For availability, cabin questions, or monthly rates, contact the
-                campground directly. This redesign keeps the call-to-book flow
-                simple and front-and-center.
+                For availability, cabin questions, or monthly rates, call the
+                campground directly or send a booking request. Reservation
+                requests are reviewed by the campground team before a stay is
+                confirmed.
               </p>
 
               <div class="contact-actions">
-                <a class="button button--primary" href="tel:12284672080">(228) 467-2080</a>
+                <button class="button button--primary" type="button" data-reservation-open>Booking Request</button>
+                <a class="button button--secondary" href="tel:12284672080">Call (228) 467-2080</a>
                 <a
                   class="button button--ghost"
                   href="https://www.google.com/maps/place/Bay+St+Louis+Campground/@30.3139992,-89.3537519,973m/data=!3m1!1e3!4m15!1m8!3m7!1s0x889c2da34d292a5f:0x4c82cb242f19c4a0!2s814+US-90,+Bay+St+Louis,+MS+39520!3b1!8m2!3d30.3141997!4d-89.3508532!16s%2Fg%2F11b8v4gvhv!3m5!1s0x889c2da330913efd:0xfc19d4c4cbeead78!8m2!3d30.3137503!4d-89.3518966!16s%2Fg%2F1tf5fjk_?entry=ttu&g_ep=EgoyMDI2MDQwOC4wIKXMDSoASAFQAw%3D%3D"
@@ -471,9 +474,285 @@
       </div>
     </div>
 
+    <div class="lightbox reservation-modal" id="reservation-request-modal" hidden aria-hidden="true">
+      <button
+        class="lightbox__backdrop"
+        type="button"
+        data-reservation-close
+        aria-label="Close reservation request form"
+      ></button>
+
+      <div
+        class="lightbox__dialog reservation-modal__dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="reservation-modal-title"
+        aria-describedby="reservation-modal-copy"
+      >
+        <div class="lightbox__toolbar reservation-modal__toolbar">
+          <div class="reservation-modal__intro">
+            <p class="lightbox__eyebrow">Booking Request</p>
+            <h2 class="reservation-modal__title" id="reservation-modal-title">Request an RV reservation</h2>
+            <p class="reservation-modal__copy" id="reservation-modal-copy">
+              Complete every field so the campground can review site fit and
+              availability. This form is a request only and is not an instant
+              booking confirmation.
+            </p>
+          </div>
+
+          <button class="button button--secondary lightbox__button" type="button" data-reservation-close>Close</button>
+        </div>
+
+        <div class="reservation-modal__content">
+          <form
+            class="reservation-form"
+            id="reservation-request-form"
+            method="post"
+          >
+            <input
+              class="reservation-form__trap"
+              type="text"
+              name="_honey"
+              hidden
+              tabindex="-1"
+              autocomplete="off"
+              aria-hidden="true"
+            />
+
+            <div class="reservation-form__grid">
+              <div class="reservation-field">
+                <label for="reservation-name">Guest Name</label>
+                <input
+                  id="reservation-name"
+                  name="Guest Name"
+                  type="text"
+                  autocomplete="name"
+                  required
+                />
+              </div>
+
+              <div class="reservation-field">
+                <label for="reservation-phone">Guest Phone Number</label>
+                <input
+                  id="reservation-phone"
+                  name="Guest Phone Number"
+                  type="tel"
+                  inputmode="tel"
+                  autocomplete="tel"
+                  required
+                />
+              </div>
+
+              <div class="reservation-field">
+                <label for="reservation-email">Guest Email Address</label>
+                <input
+                  id="reservation-email"
+                  name="Guest Email Address"
+                  type="email"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+
+              <div class="reservation-field reservation-field--full">
+                <label for="reservation-address">Home Address</label>
+                <input
+                  id="reservation-address"
+                  name="Home Address"
+                  type="text"
+                  autocomplete="street-address"
+                  placeholder="Start typing your street address"
+                  required
+                />
+                <p class="reservation-field__hint" data-address-autocomplete-hint>
+                  Enter your full street address.
+                </p>
+              </div>
+
+              <div class="reservation-field">
+                <label for="reservation-start-date">Start Date</label>
+                <input
+                  id="reservation-start-date"
+                  name="Start Date"
+                  type="date"
+                  required
+                />
+              </div>
+
+              <div class="reservation-field">
+                <label for="reservation-nights">Number of Nights</label>
+                <input
+                  id="reservation-nights"
+                  name="Number of Nights"
+                  type="number"
+                  min="1"
+                  step="1"
+                  inputmode="numeric"
+                  required
+                />
+              </div>
+
+              <div class="reservation-field">
+                <label for="reservation-rv-length">RV Length in Feet</label>
+                <input
+                  id="reservation-rv-length"
+                  name="RV Length in Feet"
+                  type="number"
+                  min="1"
+                  step="1"
+                  inputmode="numeric"
+                  required
+                />
+              </div>
+
+              <fieldset class="reservation-field reservation-fieldset reservation-fieldset--full">
+                <legend id="reservation-towing-legend">Are You Towing?</legend>
+                <div class="reservation-choice-group" role="radiogroup" aria-labelledby="reservation-towing-legend">
+                  <label
+                    class="reservation-choice"
+                    for="reservation-towing-yes"
+                    data-choice-label
+                    role="radio"
+                    aria-checked="false"
+                    tabindex="0"
+                  >
+                    <input
+                      id="reservation-towing-yes"
+                      name="Are You Towing?"
+                      type="radio"
+                      value="Yes"
+                      tabindex="-1"
+                      required
+                    />
+                    <span class="reservation-choice__label">Yes</span>
+                  </label>
+
+                  <label
+                    class="reservation-choice"
+                    for="reservation-towing-no"
+                    data-choice-label
+                    role="radio"
+                    aria-checked="false"
+                    tabindex="0"
+                  >
+                    <input
+                      id="reservation-towing-no"
+                      name="Are You Towing?"
+                      type="radio"
+                      value="No"
+                      tabindex="-1"
+                    />
+                    <span class="reservation-choice__label">No</span>
+                  </label>
+                </div>
+              </fieldset>
+
+              <fieldset class="reservation-field reservation-fieldset reservation-fieldset--full">
+                <legend id="reservation-site-type-legend">RV Site Type</legend>
+                <div class="reservation-choice-group" role="radiogroup" aria-labelledby="reservation-site-type-legend">
+                  <label
+                    class="reservation-choice"
+                    for="reservation-site-type-back-in"
+                    data-choice-label
+                    role="radio"
+                    aria-checked="false"
+                    tabindex="0"
+                  >
+                    <input
+                      id="reservation-site-type-back-in"
+                      name="RV Site Type"
+                      type="radio"
+                      value="Back-In"
+                      tabindex="-1"
+                      required
+                    />
+                    <span class="reservation-choice__label">Back-In</span>
+                  </label>
+
+                  <label
+                    class="reservation-choice"
+                    for="reservation-site-type-pull-through"
+                    data-choice-label
+                    role="radio"
+                    aria-checked="false"
+                    tabindex="0"
+                  >
+                    <input
+                      id="reservation-site-type-pull-through"
+                      name="RV Site Type"
+                      type="radio"
+                      value="Pull-Through"
+                      tabindex="-1"
+                    />
+                    <span class="reservation-choice__label">Pull-Through</span>
+                  </label>
+                </div>
+              </fieldset>
+
+              <fieldset class="reservation-field reservation-fieldset reservation-fieldset--full">
+                <legend id="reservation-service-legend">Amps Needed</legend>
+                <div class="reservation-choice-group" role="radiogroup" aria-labelledby="reservation-service-legend">
+                  <label
+                    class="reservation-choice"
+                    for="reservation-service-30"
+                    data-choice-label
+                    role="radio"
+                    aria-checked="false"
+                    tabindex="0"
+                  >
+                    <input
+                      id="reservation-service-30"
+                      name="Amps Needed"
+                      type="radio"
+                      value="30 Amps"
+                      tabindex="-1"
+                      required
+                    />
+                    <span class="reservation-choice__label">30 Amps</span>
+                  </label>
+
+                  <label
+                    class="reservation-choice"
+                    for="reservation-service-50"
+                    data-choice-label
+                    role="radio"
+                    aria-checked="false"
+                    tabindex="0"
+                  >
+                    <input
+                      id="reservation-service-50"
+                      name="Amps Needed"
+                      type="radio"
+                      value="50 Amps"
+                      tabindex="-1"
+                    />
+                    <span class="reservation-choice__label">50 Amps</span>
+                  </label>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="reservation-form__footer">
+              <p class="reservation-form__note">
+                Reservation requests are emailed to the campground for review.
+                For urgent or same-day arrivals, please call the office.
+              </p>
+
+              <div class="reservation-form__actions">
+                <p class="reservation-form__status" data-reservation-status aria-live="polite"></p>
+                <button class="button button--primary" type="submit">Send Booking Request</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <script src="./attractions-feed.js"></script>
     <script src="./analytics.js" defer></script>
     <script src="./attractions.js" defer></script>
     <script src="./map-lightbox.js?v=20260522b" defer></script>
+    <script src="./reservation-config.js?v=20260531k" defer></script>
+    <script src="./reservation-form.js?v=20260531l" defer></script>
   </body>
 </html>
