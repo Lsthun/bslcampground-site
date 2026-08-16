@@ -11,6 +11,8 @@ const refreshStaleDays = 31;
 const locationSlugMap = {
   "Bay St. Louis": "bay-st-louis",
   Waveland: "waveland",
+  "Pass Christian": "pass-christian",
+  "Long Beach": "long-beach",
   "Gulfport/Biloxi": "gulfport-biloxi"
 };
 

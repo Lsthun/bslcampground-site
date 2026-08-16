@@ -23,9 +23,14 @@ TODAY = datetime.now(LOCAL_TZ).date()
 MAX_DATE = TODAY + timedelta(days=210)
 COASTAL_MISSISSIPPI_EVENTS_URL = "https://www.coastalmississippi.com/events/"
 COASTAL_MISSISSIPPI_LINK_NOTE = "Coastal Mississippi's event page is unavailable right now."
+PASS_CHRISTIAN_EVENTS_API_URL = "https://pass-christian.com/wp-json/tribe/events/v1/events"
+LONG_BEACH_EVENTS_URL = "https://www.cityoflongbeachms.info/calendar-of-events"
+LONG_BEACH_BASE_URL = "https://www.cityoflongbeachms.info"
 SOURCE_PRIORITY = {
     "Cruisin' the Coast": 5,
     "Jeepin' the Coast": 5,
+    "City of Pass Christian": 4,
+    "City of Long Beach": 4,
     "Shoofly Magazine": 3,
     "Hancock Chamber": 2,
     "Coastal Mississippi": 1,
@@ -63,6 +68,10 @@ class EventItem:
 
     def dedupe_key(self) -> tuple[str, str, str]:
         normalized_title = re.sub(r"[^a-z0-9]+", " ", self.title.lower()).strip()
+        normalized_location = re.sub(r"[^a-z0-9]+", " ", self.location.lower()).strip()
+        if normalized_title.startswith(f"{normalized_location} "):
+            normalized_title = normalized_title[len(normalized_location) + 1 :]
+        normalized_title = re.sub(r"\bartisans\b", "artisan", normalized_title)
         return (self.date, normalized_title, self.location)
 
 
@@ -76,6 +85,10 @@ def normalize_location(*parts: Any) -> str:
     text = " ".join(clean_text(str(part)) for part in parts if part)
     lowered = text.lower().replace("saint", "st")
 
+    if "pass christian" in lowered:
+        return "Pass Christian"
+    if "long beach" in lowered:
+        return "Long Beach"
     if "bay st louis" in lowered or "bay st. louis" in lowered:
         return "Bay St. Louis"
     if "waveland" in lowered:
@@ -113,6 +126,10 @@ def is_public_event(title: str, description: str) -> bool:
     excluded_keywords = [
         "board meeting",
         "committee",
+        "board of aldermen",
+        "boa meeting",
+        "mayor & boa",
+        "mayor and boa",
         "ambassador meeting",
         "executive committee",
         "monthly meeting",
@@ -459,6 +476,226 @@ def scrape_coastal_mississippi() -> tuple[list[EventItem], dict[str, Any]]:
     }
 
 
+def html_to_text(value: str | None) -> str:
+    if not value:
+        return ""
+    return clean_text(BeautifulSoup(value, "html.parser").get_text(" ", strip=True))
+
+
+def scrape_pass_christian() -> tuple[list[EventItem], dict[str, Any]]:
+    source_name = "City of Pass Christian"
+    params = {
+        "start_date": f"{TODAY.isoformat()} 00:00:00",
+        "end_date": f"{MAX_DATE.isoformat()} 23:59:59",
+        "per_page": 50,
+        "page": 1,
+    }
+    raw_events: list[dict[str, Any]] = []
+    total_pages = 1
+
+    while params["page"] <= total_pages:
+        response = SESSION.get(PASS_CHRISTIAN_EVENTS_API_URL, params=params, timeout=30)
+        response.raise_for_status()
+        payload = response.json()
+        raw_events.extend(payload.get("events", []))
+        total_pages = int(payload.get("total_pages", 1) or 1)
+        params["page"] += 1
+
+    items: list[EventItem] = []
+    excluded_count = 0
+
+    for raw_event in raw_events:
+        title = clean_text(raw_event.get("title"))
+        description = html_to_text(raw_event.get("description") or raw_event.get("excerpt"))
+        if not title or not is_public_event(title, description):
+            excluded_count += 1
+            continue
+
+        start = parse_local_datetime(raw_event["start_date"], assume_local=True)
+        end = parse_local_datetime(raw_event.get("end_date", raw_event["start_date"]), assume_local=True)
+        start_day = max(start.date(), TODAY)
+        end_day = min(end.date(), MAX_DATE)
+        if start_day > end_day:
+            continue
+
+        venue = raw_event.get("venue") if isinstance(raw_event.get("venue"), dict) else {}
+        venue_name = clean_text(venue.get("venue"))
+        if not description:
+            description = (
+                f"Official City of Pass Christian community event{f' at {venue_name}' if venue_name else ''}."
+            )
+
+        raw_all_day = raw_event.get("all_day", False)
+        all_day = raw_all_day is True or str(raw_all_day).lower() in {"1", "true", "yes"}
+        category_names = raw_event.get("categories") or []
+        raw_category = ""
+        if category_names and isinstance(category_names[0], dict):
+            raw_category = clean_text(category_names[0].get("name"))
+
+        items.extend(
+            build_span_items(
+                title=title,
+                start_day=start_day,
+                end_day=end_day,
+                location="Pass Christian",
+                description=description,
+                url=normalize_public_url(raw_event.get("url")) or "https://pass-christian.com/events/list/",
+                source=source_name,
+                category=infer_category(title, description, raw_category),
+                time_label="All day" if all_day else format_time_label(start, end),
+            )
+        )
+
+    return items, {
+        "name": source_name,
+        "status": "ok",
+        "itemCount": len(items),
+        "notes": (
+            "Pulled from the city's public Events Calendar API. "
+            f"Excluded {excluded_count} municipal or non-visitor meeting entries."
+        ),
+    }
+
+
+def extract_json_ld_events(soup: BeautifulSoup) -> list[dict[str, Any]]:
+    events: list[dict[str, Any]] = []
+
+    def collect(value: Any) -> None:
+        if isinstance(value, list):
+            for child in value:
+                collect(child)
+            return
+        if not isinstance(value, dict):
+            return
+
+        value_type = value.get("@type")
+        if value_type == "Event" or (isinstance(value_type, list) and "Event" in value_type):
+            events.append(value)
+
+        graph = value.get("@graph")
+        if graph:
+            collect(graph)
+
+    for script in soup.select('script[type="application/ld+json"]'):
+        raw_json = script.string or script.get_text()
+        if not raw_json:
+            continue
+        try:
+            collect(json.loads(raw_json))
+        except json.JSONDecodeError:
+            continue
+
+    return events
+
+
+def extract_long_beach_occurrence_urls(page_html: str) -> list[str]:
+    match = re.search(r'"upcomingOccurrencesSuggestions":(?P<items>\[.*?\])', page_html)
+    if not match:
+        return []
+
+    try:
+        suggestions = json.loads(match.group("items"))
+    except json.JSONDecodeError:
+        return []
+
+    urls: list[str] = []
+    for suggestion in suggestions:
+        slug = clean_text(suggestion.get("slug")) if isinstance(suggestion, dict) else ""
+        date_match = re.search(r"-(?P<date>\d{4}-\d{2}-\d{2})-\d{2}-\d{2}$", slug)
+        if not slug or not date_match:
+            continue
+        occurrence_day = date.fromisoformat(date_match.group("date"))
+        if in_window(occurrence_day):
+            urls.append(urljoin(LONG_BEACH_BASE_URL, f"/event-details/{slug}"))
+
+    return urls
+
+
+def scrape_long_beach() -> tuple[list[EventItem], dict[str, Any]]:
+    source_name = "City of Long Beach"
+    calendar_html = request_text(LONG_BEACH_EVENTS_URL)
+    calendar_soup = BeautifulSoup(calendar_html, "html.parser")
+    pending_urls = [
+        urljoin(LONG_BEACH_BASE_URL, link.get("href", ""))
+        for link in calendar_soup.select('a[href*="/event-details/"]')
+    ]
+    if not pending_urls:
+        calendar_html = request_text(LONG_BEACH_EVENTS_URL)
+        calendar_soup = BeautifulSoup(calendar_html, "html.parser")
+        pending_urls = [
+            urljoin(LONG_BEACH_BASE_URL, link.get("href", ""))
+            for link in calendar_soup.select('a[href*="/event-details/"]')
+        ]
+    if not pending_urls:
+        raise RuntimeError("The official Long Beach calendar did not expose any event-detail links.")
+
+    seen_urls: set[str] = set()
+    items: list[EventItem] = []
+
+    while pending_urls:
+        detail_url = normalize_public_url(pending_urls.pop(0))
+        if not detail_url or detail_url in seen_urls:
+            continue
+        seen_urls.add(detail_url)
+
+        detail_html = request_text(detail_url)
+        detail_soup = BeautifulSoup(detail_html, "html.parser")
+        pending_urls.extend(extract_long_beach_occurrence_urls(detail_html))
+        raw_events = extract_json_ld_events(detail_soup)
+        if not raw_events:
+            detail_html = request_text(detail_url)
+            detail_soup = BeautifulSoup(detail_html, "html.parser")
+            pending_urls.extend(extract_long_beach_occurrence_urls(detail_html))
+            raw_events = extract_json_ld_events(detail_soup)
+
+        for raw_event in raw_events:
+            if raw_event.get("eventStatus") == "https://schema.org/EventCancelled":
+                continue
+
+            title = clean_text(raw_event.get("name"))
+            description = html_to_text(raw_event.get("description"))
+            if not title or not is_public_event(title, description):
+                continue
+
+            start = parse_local_datetime(raw_event["startDate"])
+            end = parse_local_datetime(raw_event.get("endDate", raw_event["startDate"]))
+            event_day = start.astimezone(LOCAL_TZ).date()
+            if not in_window(event_day):
+                continue
+
+            location_info = raw_event.get("location") if isinstance(raw_event.get("location"), dict) else {}
+            venue_name = clean_text(location_info.get("name"))
+            if not description:
+                description = f"Official City of Long Beach community event{f' at {venue_name}' if venue_name else ''}."
+
+            items.append(
+                EventItem(
+                    date=event_day.isoformat(),
+                    title=title,
+                    location="Long Beach",
+                    category=infer_category(title, description),
+                    description=description,
+                    url=detail_url,
+                    cta="View Event",
+                    source=source_name,
+                    timeLabel=format_time_label(start, end),
+                )
+            )
+
+    if not items:
+        raise RuntimeError("The official Long Beach event pages did not expose any upcoming JSON-LD events.")
+
+    return items, {
+        "name": source_name,
+        "status": "ok",
+        "itemCount": len(items),
+        "notes": (
+            "Pulled from the city's official Wix event calendar and event-page JSON-LD, "
+            "including the upcoming occurrence links exposed for recurring events."
+        ),
+    }
+
+
 def parse_chamber_detail(detail_url: str) -> dict[str, str]:
     html = request_text(detail_url)
     soup = BeautifulSoup(html, "html.parser")
@@ -681,6 +918,8 @@ def main() -> None:
     for scraper in (
         scrape_jeepin_the_coast,
         scrape_cruisin_the_coast,
+        scrape_pass_christian,
+        scrape_long_beach,
         scrape_shoofly,
         scrape_hancock_chamber,
         scrape_coastal_mississippi,
