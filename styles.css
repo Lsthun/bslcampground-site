@@ -8,6 +8,8 @@
   --sun: #e7853c;
   --bay-city: #2f7b82;
   --waveland-city: #4b7965;
+  --pass-city: #7464a5;
+  --long-beach-city: #b05f73;
   --gulf-city: #d96e2f;
   --white: #fffdf9;
   --shadow: 0 24px 80px rgba(16, 42, 53, 0.12);
@@ -1244,6 +1246,14 @@ a {
   background: rgba(75, 121, 101, 0.16);
 }
 
+.calendar-grid__pill[data-city="pass-christian"] {
+  background: rgba(116, 100, 165, 0.16);
+}
+
+.calendar-grid__pill[data-city="long-beach"] {
+  background: rgba(176, 95, 115, 0.16);
+}
+
 .calendar-grid__pill[data-city="gulfport-biloxi"] {
   background: rgba(231, 133, 60, 0.18);
 }
@@ -1388,6 +1398,14 @@ a {
   border-top: 4px solid var(--waveland-city);
 }
 
+.calendar-feed-card[data-city="pass-christian"] {
+  border-top: 4px solid var(--pass-city);
+}
+
+.calendar-feed-card[data-city="long-beach"] {
+  border-top: 4px solid var(--long-beach-city);
+}
+
 .calendar-feed-card[data-city="gulfport-biloxi"] {
   border-top: 4px solid var(--gulf-city);
 }
@@ -1416,6 +1434,14 @@ a {
 
 .calendar-feed-card__meta span[data-city="waveland"] {
   background: rgba(75, 121, 101, 0.16);
+}
+
+.calendar-feed-card__meta span[data-city="pass-christian"] {
+  background: rgba(116, 100, 165, 0.16);
+}
+
+.calendar-feed-card__meta span[data-city="long-beach"] {
+  background: rgba(176, 95, 115, 0.16);
 }
 
 .calendar-feed-card__meta span[data-city="gulfport-biloxi"] {

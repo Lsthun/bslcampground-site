@@ -1,8 +1,8 @@
 window.__ATTRACTIONS_FEED__ = {
-  "generatedAt": "2026-08-01T11:42:27Z",
+  "generatedAt": "2026-08-03T01:03:07Z",
   "window": {
-    "start": "2026-08-01",
-    "end": "2027-02-27"
+    "start": "2026-08-02",
+    "end": "2027-02-28"
   },
   "sources": [
     {
@@ -18,9 +18,21 @@ window.__ATTRACTIONS_FEED__ = {
       "notes": "Canonical dates pulled from CruisinTheCoast.com. Community reference to monitor: https://www.longbeachbreeze.com/2025/08/18/cruisin-the-coast-2025-is-just-around-the-corner/ and the Long Beach Breeze search hub at https://www.longbeachbreeze.com/?s=Cruisin%27+the+Coast."
     },
     {
+      "name": "City of Pass Christian",
+      "status": "ok",
+      "itemCount": 17,
+      "notes": "Pulled from the city's public Events Calendar API. Excluded 1 municipal or non-visitor meeting entries."
+    },
+    {
+      "name": "City of Long Beach",
+      "status": "ok",
+      "itemCount": 18,
+      "notes": "Pulled from the city's official Wix event calendar and event-page JSON-LD, including the upcoming occurrence links exposed for recurring events."
+    },
+    {
       "name": "Shoofly Magazine",
       "status": "ok",
-      "itemCount": 56,
+      "itemCount": 62,
       "notes": "Pulled from the public Tockify agenda page JSON-LD payload."
     },
     {
@@ -32,8 +44,8 @@ window.__ATTRACTIONS_FEED__ = {
     {
       "name": "Coastal Mississippi",
       "status": "ok",
-      "itemCount": 291,
-      "notes": "Pulled from the public Algolia listings index exposed on the events page. Validated 130 linked detail pages; 0 fell back to the main events listing."
+      "itemCount": 316,
+      "notes": "Pulled from the public Algolia listings index exposed on the events page. Validated 127 linked detail pages; 0 fell back to the main events listing."
     },
     {
       "name": "Old Town Merchants Association",
@@ -50,129 +62,12 @@ window.__ATTRACTIONS_FEED__ = {
   ],
   "items": [
     {
-      "date": "2026-08-01",
-      "title": "Beat the Heat with Mahjong at the Arts",
-      "location": "Bay St. Louis",
-      "category": "Arts & Culture",
-      "description": "Beat the Heat with Mahjong at the Arts Join Us for an Exciting Community Fundraiser at The Arts We are thrilled to invite you to our Mahjong Tournament & Friend",
-      "url": "https://tockify.com/shooflymagazine/detail/4813/1785596400000",
-      "cta": "View Event",
-      "source": "Shoofly Magazine",
-      "timeLabel": "10:00 AM - 12:00 PM",
-      "hasLiveLink": true,
-      "linkNote": ""
-    },
-    {
-      "date": "2026-08-01",
-      "title": "Beat the Heat | Mahjong Tournament",
-      "location": "Bay St. Louis",
-      "category": "Arts & Culture",
-      "description": "Stay cool this season and enjoy an exciting day of Mahjong, friendly competition, and community fun at The Arts!Join us for a Mahjong Tournament & Friendly Play Fundraiser, welcoming players of all skill levels, from experienced enthusiasts to those who enjoy a casual game with friends. Whether you're competing for prizes or gathering around the table for fun, this event is the perfect way to connect, play, and support a great cause.Guests will enjoy:Mahjong tournament and friendly play optionsRefreshments and snacksPrizes and giveawaysA fun, social atmosphereAn opportunity to support The Arts through a community fundraiserDon't miss this chance to beat the Mississippi heat, meet fellow Mahjong players, and enjoy a memorable day of games and community engagement.Register:https://tinyurl.com/mahjongTheArtsQuestions?Caroline Colquett662-299-2984CarolineColquett@gmail.com",
-      "url": "https://www.coastalmississippi.com/events/beat-the-heat-mahjong-tournament/",
-      "cta": "View Event",
-      "source": "Coastal Mississippi",
-      "timeLabel": "",
-      "hasLiveLink": true,
-      "linkNote": ""
-    },
-    {
-      "date": "2026-08-01",
-      "title": "Hancock County Farmers Market",
-      "location": "Bay St. Louis",
-      "category": "Festival",
-      "description": "The Hancock County Farmers' Market is a weekly happening that keeps growing, with more vendors setting up all the time! If you're a vendor and want to know abou",
-      "url": "https://tockify.com/shooflymagazine/detail/1164/1785589200000",
-      "cta": "View Event",
-      "source": "Shoofly Magazine",
-      "timeLabel": "8:00 AM - 12:00 PM",
-      "hasLiveLink": true,
-      "linkNote": ""
-    },
-    {
-      "date": "2026-08-01",
+      "date": "2026-08-02",
       "title": "Hollydeck Live Music",
       "location": "Bay St. Louis",
       "category": "Live Music",
       "description": "Join us at Hollywood Casino Gulf Coast at the Hollydeck to enjoy live music, great cocktails, and a scenic view!Fridays | 6 p.m. to 10 p.m.Saturdays | 4 p.m. to 8 p.m. Sundays | 2 p.m. to 6 p.m.See our website for the latest entertainment lineup!",
       "url": "https://www.coastalmississippi.com/events/hollydeck-live-music/",
-      "cta": "View Event",
-      "source": "Coastal Mississippi",
-      "timeLabel": "",
-      "hasLiveLink": true,
-      "linkNote": ""
-    },
-    {
-      "date": "2026-08-01",
-      "title": "Stage Bar Live Entertainment",
-      "location": "Bay St. Louis",
-      "category": "Arts & Culture",
-      "description": "Join us at Hollywood Gulf Coast Casino for live music at the Stage Bar every Friday and Saturday!Upcoming Artist Lineup:MARCHMar 6\u20137: StarzMar 13\u201314: Cajun ClassicsMar 20\u201321: StarzMar 27\u201328: Mach V NOLAAPRILApr 3\u20134: 3rd Street BandApr 10\u201311: WitnessApr 17\u201318: QuiksilvrApr 24\u201325: Ado Soul & The TribeVisit our website for the most up\u2011to\u2011date entertainment schedule!",
-      "url": "https://www.coastalmississippi.com/events/stage-bar-live-entertainment/",
-      "cta": "View Event",
-      "source": "Coastal Mississippi",
-      "timeLabel": "",
-      "hasLiveLink": true,
-      "linkNote": ""
-    },
-    {
-      "date": "2026-08-01",
-      "title": "Studio 54 starring Anais St. John",
-      "location": "Bay St. Louis",
-      "category": "Arts & Culture",
-      "description": "Bay Saint Louis, MS \u2013 The 100 Men Hall hosts STUDIO 54, an incomparable dance party starring Anais St. John. Tickets are $25 in advance and $35 at the door. Foo",
-      "url": "https://tockify.com/shooflymagazine/detail/4836/1785628800000",
-      "cta": "View Event",
-      "source": "Shoofly Magazine",
-      "timeLabel": "7:00 PM - 11:30 PM",
-      "hasLiveLink": true,
-      "linkNote": ""
-    },
-    {
-      "date": "2026-08-01",
-      "title": "Back-to-School Bash!",
-      "location": "Gulfport/Biloxi",
-      "category": "Arts & Culture",
-      "description": "Get your family ready for a successful school year at the Back-to-School Bash! on Saturday, August 1, from 1 to 4 p.m. at the Orange Grove Community Center (14416 Dedeaux Road, Gulfport, MS).This free community event connects families with valuable health resources, school readiness programs, educational support services, and community organizations dedicated to helping students thrive. Enjoy interactive activities, access important back-to-school information, and discover resources designed to ensure children start the new school year prepared, confident, and ready to succeed!",
-      "url": "https://www.coastalmississippi.com/events/back-to-school-bash/",
-      "cta": "View Event",
-      "source": "Coastal Mississippi",
-      "timeLabel": "",
-      "hasLiveLink": true,
-      "linkNote": ""
-    },
-    {
-      "date": "2026-08-01",
-      "title": "Brandon Bennett | Elvis My Way",
-      "location": "Gulfport/Biloxi",
-      "category": "Festival",
-      "description": "Get ready for an unforgettable evening celebrating the music and legacy of Elvis Presley with award-winning entertainer Brandon Bennett. A native of South Louisiana, Bennett has earned international acclaim as one of the world\u2019s premier Elvis tribute artists, capturing the voice, charisma, and spirit of the King of Rock \u2019n\u2019 Roll.Recognized by Elvis Presley Enterprises as an \"Ultimate Elvis Tribute Artist,\" Bennett has appeared on national television programs including The Late Show with David Letterman, NBC Nightly News, The Ricki Lake Show, and American Hot Rod. His impressive career includes starring roles in the Elvis Presley Enterprises-endorsed production The Elvis Story and the Tony Award-winning musical Million Dollar Quartet.Bennett\u2019s talent has taken him to major stages across the country, with featured performances for professional sports organizations including the Chicago Bulls, Chicago Cubs, Chicago White Sox, Chicago Bears, Memphis Grizzlies, and San Francisco Giants. He has also had the unique privilege of performing alongside members of Elvis Presley\u2019s original circle, including drummer D.J. Fontana, The Sweet Inspirations, and The Jordanaires.With performances spanning casino showrooms, performing arts centers, festivals, fairs, corporate events, television, and radio, Brandon Bennett continues to captivate audiences through his acclaimed production, Brandon Bennett \u2013 Elvis My Way. More than a tribute show, it is a heartfelt celebration of Elvis Presley\u2019s music, artistry, and enduring influence.As Bennett explains, \u201cEvery time I\u2019m on stage, I strive to recreate what people remember and respect about what Elvis offered in his performance. It wasn't about what he wore\u2014it was about the music, his voice, and most of all, that he was real.\u201dExperience the timeless songs, electrifying energy, and authentic spirit of Elvis Presley in a performance that honors the man behind the legend!",
-      "url": "https://www.coastalmississippi.com/events/brandon-bennett-elvis-my-way/",
-      "cta": "View Event",
-      "source": "Coastal Mississippi",
-      "timeLabel": "",
-      "hasLiveLink": true,
-      "linkNote": ""
-    },
-    {
-      "date": "2026-08-01",
-      "title": "Island Fights 99",
-      "location": "Gulfport/Biloxi",
-      "category": "Arts & Culture",
-      "description": "Experience the intensity of live MMA action at Beau Rivage Theatre when Island Fights MMA brings an evening of premier combat sports entertainment to the Mississippi Gulf Coast!Featuring talented fighters from across the Southeast, this exciting event showcases powerful striking, technical grappling, and high-stakes matchups inside the cage.Renowned for highlighting both rising stars and seasoned competitors, Island Fights delivers an electrifying atmosphere packed with nonstop action and unforgettable moments. Fans can expect competitive bouts, dramatic finishes, and the energy that only live mixed martial arts can provide.Whether you're a dedicated MMA enthusiast or simply looking for an exciting night out in Biloxi, this event offers a unique entertainment experience at one of the Coast's top venues. This event is for guests ages 18 and older. Don't miss your chance to witness the excitement of professional MMA in Biloxi and experience the thrill of live cage fighting up close!",
-      "url": "https://www.coastalmississippi.com/events/island-fights-99/",
-      "cta": "View Event",
-      "source": "Coastal Mississippi",
-      "timeLabel": "",
-      "hasLiveLink": true,
-      "linkNote": ""
-    },
-    {
-      "date": "2026-08-01",
-      "title": "Piper & The Hard Times",
-      "location": "Gulfport/Biloxi",
-      "category": "Dining",
-      "description": "Since winning the prestigious 2024 International Blues Challenge in Memphis, Piper & The Hard Times has quickly become one of the hottest acts in blues and roots music. Their debut album, Revelation, released in August 2024, reached #1 on the Billboard Blues Chart, earned worldwide radio play, and landed on numerous \u201cBest of 2024\u201d lists. In 2025, the band was honored with the Blues Music Award for Best Emerging Artist and recognized by The Blues Foundation for Top Independent Album.Known for their electrifying live performances and standing-ovation shows, Piper & The Hard Times have appeared at major festivals including the WC Handy Fest, Big Blues Bender, and Telluride Blues & Brews Festival. The band\u2019s core members \u2014 Al \u201cPiper\u201d Green, Steve Eagon, and Dave Colella \u2014 have spent over 20 years crafting their powerful blend of blues, roots rock, soul, and gospel-infused music, joined by Amy Frederick on keyboards and Parker Hawkins on bass.Frontman Al \u201cPiper\u201d Green delivers commanding vocals and unforgettable showmanship, while guitarist Steve Eagon\u2019s dynamic songwriting and Dave Colella\u2019s driving percussion create the backbone of the band\u2019s signature sound. In 2025, the group released their follow-up album, Good Company, continuing their rapid rise with rave reviews and chart success.",
-      "url": "https://www.coastalmississippi.com/events/piper-the-hard-times/",
       "cta": "View Event",
       "source": "Coastal Mississippi",
       "timeLabel": "",
@@ -181,11 +76,11 @@ window.__ATTRACTIONS_FEED__ = {
     },
     {
       "date": "2026-08-02",
-      "title": "Hollydeck Live Music",
-      "location": "Bay St. Louis",
-      "category": "Live Music",
-      "description": "Join us at Hollywood Casino Gulf Coast at the Hollydeck to enjoy live music, great cocktails, and a scenic view!Fridays | 6 p.m. to 10 p.m.Saturdays | 4 p.m. to 8 p.m. Sundays | 2 p.m. to 6 p.m.See our website for the latest entertainment lineup!",
-      "url": "https://www.coastalmississippi.com/events/hollydeck-live-music/",
+      "title": "Long Beach Art And Artisans Market",
+      "location": "Long Beach",
+      "category": "Festival",
+      "description": "The Weekly Art and Artisans Market is held every Sunday on the Harper McCaughan Town Green in Long Beach, MS. All artwork is handmade, homemade, and original!",
+      "url": "https://www.coastalmississippi.com/events/long-beach-art-and-artisans-market/",
       "cta": "View Event",
       "source": "Coastal Mississippi",
       "timeLabel": "",
@@ -284,6 +179,19 @@ window.__ATTRACTIONS_FEED__ = {
       "linkNote": ""
     },
     {
+      "date": "2026-08-06",
+      "title": "First Thursday Bike Ride",
+      "location": "Long Beach",
+      "category": "Outdoors",
+      "description": "Official City of Long Beach community event at Harper McCaughan Town Green.",
+      "url": "https://www.cityoflongbeachms.info/event-details/first-thursday-bike-ride-9",
+      "cta": "View Event",
+      "source": "City of Long Beach",
+      "timeLabel": "6:00 PM - 8:00 PM",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
       "date": "2026-08-07",
       "title": "Hollydeck Live Music",
       "location": "Bay St. Louis",
@@ -319,6 +227,19 @@ window.__ATTRACTIONS_FEED__ = {
       "cta": "View Event",
       "source": "Coastal Mississippi",
       "timeLabel": "",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
+      "date": "2026-08-07",
+      "title": "Long Beach Live",
+      "location": "Long Beach",
+      "category": "Outdoors",
+      "description": "Live music in downtown Long Beach.",
+      "url": "https://www.cityoflongbeachms.info/event-details/long-beach-live-2026-08-07-19-00",
+      "cta": "View Event",
+      "source": "City of Long Beach",
+      "timeLabel": "7:00 PM - 11:00 PM",
       "hasLiveLink": true,
       "linkNote": ""
     },
@@ -440,6 +361,19 @@ window.__ATTRACTIONS_FEED__ = {
       "linkNote": ""
     },
     {
+      "date": "2026-08-08",
+      "title": "Flounder Pounder Fishing Tournament",
+      "location": "Pass Christian",
+      "category": "Outdoors",
+      "description": "Official City of Pass Christian community event.",
+      "url": "https://pass-christian.com/event/flounder-pounder-fishing-tournament-3/",
+      "cta": "View Event",
+      "source": "City of Pass Christian",
+      "timeLabel": "11:00 AM - 7:00 PM",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
       "date": "2026-08-09",
       "title": "Blues Bruch featuring Eric Johanson",
       "location": "Bay St. Louis",
@@ -479,6 +413,32 @@ window.__ATTRACTIONS_FEED__ = {
       "linkNote": ""
     },
     {
+      "date": "2026-08-09",
+      "title": "Art and Artisan Market",
+      "location": "Long Beach",
+      "category": "Festival",
+      "description": "Official City of Long Beach community event at Harper McCaughan Town Green.",
+      "url": "https://www.cityoflongbeachms.info/event-details/art-and-artisan-market-2026-08-09-10-00",
+      "cta": "View Event",
+      "source": "City of Long Beach",
+      "timeLabel": "10:00 AM - 2:00 PM",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
+      "date": "2026-08-09",
+      "title": "Flounder Pounder Fishing Tournament",
+      "location": "Pass Christian",
+      "category": "Outdoors",
+      "description": "Official City of Pass Christian community event.",
+      "url": "https://pass-christian.com/event/flounder-pounder-fishing-tournament-2/",
+      "cta": "View Event",
+      "source": "City of Pass Christian",
+      "timeLabel": "11:00 AM - 7:00 PM",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
       "date": "2026-08-10",
       "title": "BSL Historic Preservation Commission Meetings",
       "location": "Bay St. Louis",
@@ -511,6 +471,19 @@ window.__ATTRACTIONS_FEED__ = {
       "category": "Arts & Culture",
       "description": "The Arts, Hancock County has membership meetings on the 2nd Wednesday of each month, 5:30-7pm. These are open meetings, so the public is invited. We do ask all",
       "url": "https://tockify.com/shooflymagazine/detail/2513/1786573800000",
+      "cta": "View Event",
+      "source": "Shoofly Magazine",
+      "timeLabel": "5:30 PM - 7:00 PM",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
+      "date": "2026-08-12",
+      "title": "Members' Gallery Opening Reception & Monthly Social Gathering",
+      "location": "Bay St. Louis",
+      "category": "Arts & Culture",
+      "description": "Members' Gallery Opening Reception & Monthly Social Gathering The Arts, Hancock County proudly supports and celebrates the talented artists in our community thr",
+      "url": "https://tockify.com/shooflymagazine/detail/4849/1786573800000",
       "cta": "View Event",
       "source": "Shoofly Magazine",
       "timeLabel": "5:30 PM - 7:00 PM",
@@ -579,6 +552,19 @@ window.__ATTRACTIONS_FEED__ = {
       "cta": "View Event",
       "source": "Coastal Mississippi",
       "timeLabel": "",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
+      "date": "2026-08-13",
+      "title": "Pedal In The Pass Community Bike Ride",
+      "location": "Pass Christian",
+      "category": "Dining",
+      "description": "Join us on Thursday, March 12th for \u201cPedal in the Pass\u201d monthly bicycle dinner ride which takes place on the 2nd Thursday from March through September. We meet",
+      "url": "https://tockify.com/shooflymagazine/detail/4630/1786662000000",
+      "cta": "View Event",
+      "source": "Shoofly Magazine",
+      "timeLabel": "6:00 PM - 7:00 PM",
       "hasLiveLink": true,
       "linkNote": ""
     },
@@ -726,6 +712,19 @@ window.__ATTRACTIONS_FEED__ = {
       "linkNote": ""
     },
     {
+      "date": "2026-08-15",
+      "title": "Ainsley's Angels 5k",
+      "location": "Long Beach",
+      "category": "Outdoors",
+      "description": "Official City of Long Beach community event at Harper McCaughan Town Green Pavilion.",
+      "url": "https://www.cityoflongbeachms.info/event-details/ainsleys-angels-5k",
+      "cta": "View Event",
+      "source": "City of Long Beach",
+      "timeLabel": "8:00 AM - 11:00 AM",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
       "date": "2026-08-16",
       "title": "Hollydeck Live Music",
       "location": "Bay St. Louis",
@@ -748,6 +747,19 @@ window.__ATTRACTIONS_FEED__ = {
       "cta": "View Event",
       "source": "Coastal Mississippi",
       "timeLabel": "",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
+      "date": "2026-08-16",
+      "title": "Art and Artisan Market",
+      "location": "Long Beach",
+      "category": "Festival",
+      "description": "Official City of Long Beach community event at Harper McCaughan Town Green.",
+      "url": "https://www.cityoflongbeachms.info/event-details/art-and-artisan-market-2026-08-16-10-00",
+      "cta": "View Event",
+      "source": "City of Long Beach",
+      "timeLabel": "10:00 AM - 2:00 PM",
       "hasLiveLink": true,
       "linkNote": ""
     },
@@ -813,6 +825,19 @@ window.__ATTRACTIONS_FEED__ = {
       "cta": "View Event",
       "source": "Coastal Mississippi",
       "timeLabel": "",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
+      "date": "2026-08-19",
+      "title": "Wednesdays at the Depot Featuring Rumours",
+      "location": "Bay St. Louis",
+      "category": "Live Music",
+      "description": "With free live music on the outdoor stage, and many local vendors, Wednesdays at the Depot is a monthly community celebration held every third Wednesday from Ap",
+      "url": "https://tockify.com/shooflymagazine/detail/4852/1787178600000",
+      "cta": "View Event",
+      "source": "Shoofly Magazine",
+      "timeLabel": "5:30 PM - 8:30 PM",
       "hasLiveLink": true,
       "linkNote": ""
     },
@@ -999,6 +1024,19 @@ window.__ATTRACTIONS_FEED__ = {
       "linkNote": ""
     },
     {
+      "date": "2026-08-21",
+      "title": "MS Gulf Coast Mahjong Classic",
+      "location": "Pass Christian",
+      "category": "Community",
+      "description": "Join us for the Mississippi Gulf Coast Mahjong Classic presented by the Pass Christian Chamber of Commerce! This will be a day of friendly competition, connecti",
+      "url": "https://tockify.com/shooflymagazine/detail/4749/1787374800000",
+      "cta": "View Event",
+      "source": "Shoofly Magazine",
+      "timeLabel": "Aug 21 7:00 PM - Aug 22 7:00 PM",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
       "date": "2026-08-22",
       "title": "Hancock County Farmers Market",
       "location": "Bay St. Louis",
@@ -1073,6 +1111,19 @@ window.__ATTRACTIONS_FEED__ = {
       "cta": "View Event",
       "source": "Coastal Mississippi",
       "timeLabel": "",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
+      "date": "2026-08-23",
+      "title": "Art and Artisan Market",
+      "location": "Long Beach",
+      "category": "Festival",
+      "description": "Official City of Long Beach community event at Harper McCaughan Town Green.",
+      "url": "https://www.cityoflongbeachms.info/event-details/art-and-artisan-market-2026-08-23-10-00",
+      "cta": "View Event",
+      "source": "City of Long Beach",
+      "timeLabel": "10:00 AM - 2:00 PM",
       "hasLiveLink": true,
       "linkNote": ""
     },
@@ -1272,6 +1323,19 @@ window.__ATTRACTIONS_FEED__ = {
       "linkNote": ""
     },
     {
+      "date": "2026-08-30",
+      "title": "Art and Artisan Market",
+      "location": "Long Beach",
+      "category": "Festival",
+      "description": "Official City of Long Beach community event at Harper McCaughan Town Green.",
+      "url": "https://www.cityoflongbeachms.info/event-details/art-and-artisan-market-2026-08-30-10-00",
+      "cta": "View Event",
+      "source": "City of Long Beach",
+      "timeLabel": "10:00 AM - 2:00 PM",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
       "date": "2026-09-01",
       "title": "BSL City Council Mtg.",
       "location": "Bay St. Louis",
@@ -1281,6 +1345,19 @@ window.__ATTRACTIONS_FEED__ = {
       "cta": "View Event",
       "source": "Shoofly Magazine",
       "timeLabel": "5:30 PM - 7:30 PM",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
+      "date": "2026-09-01",
+      "title": "Create Ceramic Birdhouses with Cynthia Mahner",
+      "location": "Bay St. Louis",
+      "category": "Arts & Culture",
+      "description": "Create a charming ceramic birdhouse that is truly one of a kind! In this hands-on clay workshop, instructor Cynthia Mahner will guide students through building",
+      "url": "https://tockify.com/shooflymagazine/detail/4850/1788285600000",
+      "cta": "View Event",
+      "source": "Shoofly Magazine",
+      "timeLabel": "1:00 PM - 4:00 PM",
       "hasLiveLink": true,
       "linkNote": ""
     },
@@ -1350,6 +1427,19 @@ window.__ATTRACTIONS_FEED__ = {
       "linkNote": ""
     },
     {
+      "date": "2026-09-03",
+      "title": "First Thursday Bike Ride",
+      "location": "Long Beach",
+      "category": "Outdoors",
+      "description": "Official City of Long Beach community event at Harper McCaughan Town Green.",
+      "url": "https://www.cityoflongbeachms.info/event-details/first-thursday-bike-ride-10",
+      "cta": "View Event",
+      "source": "City of Long Beach",
+      "timeLabel": "6:00 PM - 8:00 PM",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
       "date": "2026-09-04",
       "title": "7th Annual Booker Fest",
       "location": "Bay St. Louis",
@@ -1359,6 +1449,19 @@ window.__ATTRACTIONS_FEED__ = {
       "cta": "View Event",
       "source": "Coastal Mississippi",
       "timeLabel": "",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
+      "date": "2026-09-04",
+      "title": "Create N Take: Calder-Style Mobiles with Laurali Manieri",
+      "location": "Bay St. Louis",
+      "category": "Arts & Culture",
+      "description": "Create a one-of-a-kind work of art that moves! Join instructor Laurali Manieri for Create N Take: Calder-Style Mobiles on Friday, September 4, from 6\u20138 PM. Insp",
+      "url": "https://tockify.com/shooflymagazine/detail/4851/1788561000000",
+      "cta": "View Event",
+      "source": "Shoofly Magazine",
+      "timeLabel": "5:30 PM - 7:00 PM",
       "hasLiveLink": true,
       "linkNote": ""
     },
@@ -1403,8 +1506,21 @@ window.__ATTRACTIONS_FEED__ = {
     },
     {
       "date": "2026-09-04",
+      "title": "Long Beach Live",
+      "location": "Long Beach",
+      "category": "Outdoors",
+      "description": "Live music in downtown Long Beach.",
+      "url": "https://www.cityoflongbeachms.info/event-details/long-beach-live-2026-09-04-19-00",
+      "cta": "View Event",
+      "source": "City of Long Beach",
+      "timeLabel": "7:00 PM - 11:00 PM",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
+      "date": "2026-09-04",
       "title": "Light in the Darkness | March for Jesus",
-      "location": "Gulfport/Biloxi",
+      "location": "Pass Christian",
       "category": "Arts & Culture",
       "description": "Celebrate Labor Day Weekend with an evening of faith, fellowship, music, and community along the Mississippi Gulf Coast! Light in the Darkness | March for Jesus invites individuals, families, churches, and community groups to gather on the beaches of Harrison County to honor and exalt Jesus Christ through song, prayer, and a shoreline march.Participants will meet with designated host groups beginning at 6 p.m. for fellowship and, at some locations, a shared beach meal. Attendees are encouraged to wear bright or reflective clothing and bring glow-in-the-dark accessories, banners, and other illuminated items to help \"light up the night\" in a joyful celebration of faith.At 7 p.m., groups will begin a one-hour march along the beach, singing and celebrating God's goodness together. Following the march, many host groups will remain for additional fellowship and community gathering.To participate, choose a host group through the event's Facebook page and contact the host organizer to be added to the participant list.Registration & Detailshttps://www.facebook.com/groups/864180813423837/Contact InformationThe Lighthouse Harbor | Emmie ChasteenPhone: 719-235-3137 or 228-731-3103Email: TheLighthouseHarbor@post.com",
       "url": "https://www.coastalmississippi.com/events/light-in-the-darkness-march-for-jesus/",
@@ -1489,6 +1605,19 @@ window.__ATTRACTIONS_FEED__ = {
       "cta": "View Event",
       "source": "Shoofly Magazine",
       "timeLabel": "1:30 PM - 4:00 PM",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
+      "date": "2026-09-06",
+      "title": "Long Beach Art And Artisans Market",
+      "location": "Long Beach",
+      "category": "Festival",
+      "description": "The Weekly Art and Artisans Market is held every Sunday on the Harper McCaughan Town Green in Long Beach, MS. All artwork is handmade, homemade, and original!",
+      "url": "https://www.coastalmississippi.com/events/long-beach-art-and-artisans-market/",
+      "cta": "View Event",
+      "source": "Coastal Mississippi",
+      "timeLabel": "",
       "hasLiveLink": true,
       "linkNote": ""
     },
@@ -1610,6 +1739,19 @@ window.__ATTRACTIONS_FEED__ = {
       "linkNote": ""
     },
     {
+      "date": "2026-09-10",
+      "title": "Pedal In The Pass Community Bike Ride",
+      "location": "Pass Christian",
+      "category": "Dining",
+      "description": "Join us on Thursday, March 12th for \u201cPedal in the Pass\u201d monthly bicycle dinner ride which takes place on the 2nd Thursday from March through September. We meet",
+      "url": "https://tockify.com/shooflymagazine/detail/4631/1789081200000",
+      "cta": "View Event",
+      "source": "Shoofly Magazine",
+      "timeLabel": "6:00 PM - 7:00 PM",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
       "date": "2026-09-11",
       "title": "Hollydeck Live Music",
       "location": "Bay St. Louis",
@@ -1632,6 +1774,19 @@ window.__ATTRACTIONS_FEED__ = {
       "cta": "View Event",
       "source": "Coastal Mississippi",
       "timeLabel": "",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
+      "date": "2026-09-11",
+      "title": "Hookem for Heros Fishing Tournament",
+      "location": "Pass Christian",
+      "category": "Outdoors",
+      "description": "Official City of Pass Christian community event.",
+      "url": "https://pass-christian.com/event/hookem-for-heros-fishing-tournament/",
+      "cta": "View Event",
+      "source": "City of Pass Christian",
+      "timeLabel": "All day",
       "hasLiveLink": true,
       "linkNote": ""
     },
@@ -1779,6 +1934,19 @@ window.__ATTRACTIONS_FEED__ = {
       "linkNote": ""
     },
     {
+      "date": "2026-09-12",
+      "title": "Hookem for Heros Fishing Tournament",
+      "location": "Pass Christian",
+      "category": "Outdoors",
+      "description": "Official City of Pass Christian community event.",
+      "url": "https://pass-christian.com/event/hookem-for-heros-fishing-tournament/",
+      "cta": "View Event",
+      "source": "City of Pass Christian",
+      "timeLabel": "All day",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
       "date": "2026-09-13",
       "title": "Hollydeck Live Music",
       "location": "Bay St. Louis",
@@ -1801,6 +1969,19 @@ window.__ATTRACTIONS_FEED__ = {
       "cta": "View Event",
       "source": "Shoofly Magazine",
       "timeLabel": "1:30 PM - 4:00 PM",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
+      "date": "2026-09-13",
+      "title": "Long Beach Art And Artisans Market",
+      "location": "Long Beach",
+      "category": "Festival",
+      "description": "The Weekly Art and Artisans Market is held every Sunday on the Harper McCaughan Town Green in Long Beach, MS. All artwork is handmade, homemade, and original!",
+      "url": "https://www.coastalmississippi.com/events/long-beach-art-and-artisans-market/",
+      "cta": "View Event",
+      "source": "Coastal Mississippi",
+      "timeLabel": "",
       "hasLiveLink": true,
       "linkNote": ""
     },
@@ -2039,6 +2220,19 @@ window.__ATTRACTIONS_FEED__ = {
       "linkNote": ""
     },
     {
+      "date": "2026-09-18",
+      "title": "Bama Q",
+      "location": "Pass Christian",
+      "category": "Events",
+      "description": "Official City of Pass Christian community event.",
+      "url": "https://pass-christian.com/event/bama-q/",
+      "cta": "View Event",
+      "source": "City of Pass Christian",
+      "timeLabel": "2:00 PM - 8:00 PM",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
       "date": "2026-09-19",
       "title": "Hancock County Farmers Market",
       "location": "Bay St. Louis",
@@ -2130,6 +2324,45 @@ window.__ATTRACTIONS_FEED__ = {
       "linkNote": ""
     },
     {
+      "date": "2026-09-19",
+      "title": "CALB Car Show",
+      "location": "Long Beach",
+      "category": "Outdoors",
+      "description": "Official City of Long Beach community event at Corner of 5th St. and Jeff Davis Ave..",
+      "url": "https://www.cityoflongbeachms.info/event-details/calb-car-show-2",
+      "cta": "View Event",
+      "source": "City of Long Beach",
+      "timeLabel": "8:00 AM - 12:00 PM",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
+      "date": "2026-09-19",
+      "title": "Fall Sidewalk Sale",
+      "location": "Long Beach",
+      "category": "Festival",
+      "description": "All your favorite local businesses in Long Beach are hosting the Long Beach Fall Sidewalk Sale on September 19th during normal business hours. We hope to see you downtown and uptown around the City of Long Beach. Stop by each participating business to enjoy their sale or featured items.",
+      "url": "https://www.cityoflongbeachms.info/event-details/fall-sidewalk-sale-2",
+      "cta": "View Event",
+      "source": "City of Long Beach",
+      "timeLabel": "9:00 AM - 4:00 PM",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
+      "date": "2026-09-19",
+      "title": "Bama Q",
+      "location": "Pass Christian",
+      "category": "Events",
+      "description": "Official City of Pass Christian community event at Pass Christian Harbor.",
+      "url": "https://pass-christian.com/event/bama-q-2/",
+      "cta": "View Event",
+      "source": "City of Pass Christian",
+      "timeLabel": "8:00 AM - 8:00 PM",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
       "date": "2026-09-20",
       "title": "Hollydeck Live Music",
       "location": "Bay St. Louis",
@@ -2175,6 +2408,19 @@ window.__ATTRACTIONS_FEED__ = {
       "category": "Arts & Culture",
       "description": "Story Slam returns to The Arts, Hancock County, on Saturday, September 20, from 5:30 to 7 p.m. for this month's slam theme, \u201cHappy Birthday...or Not.\u201dThis free community storytelling event invites participants to share true, personal stories inspired by the theme of birthdays, whether hilarious, heartwarming, awkward, or completely unforgettable. In honor of America\u2019s 250th birthday, storytellers are encouraged to reflect on memorable birthday experiences, from epic celebrations and party disasters to forgotten birthdays and unexpected adventures. Those interested in telling a story can sign up in advance at https://tinyurl.com/Sept-Story-Slam.Not ready to take the mic? Come enjoy an evening of laughter, connection, and community as local storytellers share real-life experiences. Bring your favorite beverage and snacks, arrive early for seating, and prepare for a memorable night. Admission is free; some stories may contain adult content.",
       "url": "https://www.coastalmississippi.com/events/september-story-slam-happy-birthdayor-not/",
+      "cta": "View Event",
+      "source": "Coastal Mississippi",
+      "timeLabel": "",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
+      "date": "2026-09-20",
+      "title": "Long Beach Art And Artisans Market",
+      "location": "Long Beach",
+      "category": "Festival",
+      "description": "The Weekly Art and Artisans Market is held every Sunday on the Harper McCaughan Town Green in Long Beach, MS. All artwork is handmade, homemade, and original!",
+      "url": "https://www.coastalmississippi.com/events/long-beach-art-and-artisans-market/",
       "cta": "View Event",
       "source": "Coastal Mississippi",
       "timeLabel": "",
@@ -2351,6 +2597,19 @@ window.__ATTRACTIONS_FEED__ = {
       "linkNote": ""
     },
     {
+      "date": "2026-09-27",
+      "title": "Long Beach Art And Artisans Market",
+      "location": "Long Beach",
+      "category": "Festival",
+      "description": "The Weekly Art and Artisans Market is held every Sunday on the Harper McCaughan Town Green in Long Beach, MS. All artwork is handmade, homemade, and original!",
+      "url": "https://www.coastalmississippi.com/events/long-beach-art-and-artisans-market/",
+      "cta": "View Event",
+      "source": "Coastal Mississippi",
+      "timeLabel": "",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
       "date": "2026-09-29",
       "title": "Jaymoon Yoga | Vinyasa Flow",
       "location": "Gulfport/Biloxi",
@@ -2390,6 +2649,19 @@ window.__ATTRACTIONS_FEED__ = {
       "linkNote": ""
     },
     {
+      "date": "2026-10-01",
+      "title": "First Thursday Bike Ride",
+      "location": "Long Beach",
+      "category": "Outdoors",
+      "description": "Official City of Long Beach community event at Harper McCaughan Town Green.",
+      "url": "https://www.cityoflongbeachms.info/event-details/first-thursday-bike-ride-7",
+      "cta": "View Event",
+      "source": "City of Long Beach",
+      "timeLabel": "6:00 PM - 8:00 PM",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
       "date": "2026-10-02",
       "title": "Hollydeck Live Music",
       "location": "Bay St. Louis",
@@ -2412,6 +2684,19 @@ window.__ATTRACTIONS_FEED__ = {
       "cta": "View Event",
       "source": "Coastal Mississippi",
       "timeLabel": "",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
+      "date": "2026-10-02",
+      "title": "Long Beach Live",
+      "location": "Long Beach",
+      "category": "Outdoors",
+      "description": "Live music in downtown Long Beach.",
+      "url": "https://www.cityoflongbeachms.info/event-details/long-beach-live-2026-10-02-19-00",
+      "cta": "View Event",
+      "source": "City of Long Beach",
+      "timeLabel": "7:00 PM - 11:00 PM",
       "hasLiveLink": true,
       "linkNote": ""
     },
@@ -2455,6 +2740,19 @@ window.__ATTRACTIONS_FEED__ = {
       "linkNote": ""
     },
     {
+      "date": "2026-10-03",
+      "title": "Butterflies in the Pass Monarch Festival",
+      "location": "Pass Christian",
+      "category": "Festival",
+      "description": "Official City of Pass Christian community event at War Memorial Park.",
+      "url": "https://pass-christian.com/event/butterflies-in-the-pass-monarch-festival-3/",
+      "cta": "View Event",
+      "source": "City of Pass Christian",
+      "timeLabel": "10:00 AM - 1:00 PM",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
       "date": "2026-10-04",
       "title": "Cruisin' the Coast",
       "location": "Bay St. Louis",
@@ -2464,19 +2762,6 @@ window.__ATTRACTIONS_FEED__ = {
       "cta": "View Event",
       "source": "Cruisin' the Coast",
       "timeLabel": "Multi-day event",
-      "hasLiveLink": true,
-      "linkNote": ""
-    },
-    {
-      "date": "2026-10-04",
-      "title": "Cruisin' the Coast 2026 | 30th Anniversary Event",
-      "location": "Bay St. Louis",
-      "category": "Dining",
-      "description": "Cruisin\u2019 the Coast\u00ae returns to the Mississippi Gulf Coast October 4\u201311, 2026, celebrating its 30th Anniversary as America\u2019s Largest Block Party! This iconic week\u2011long event features thousands of antique, classic, and hot rod vehicles cruising a stunning 30\u2011mile beachside route with stops in Bay St. Louis, Pass Christian, Gulfport, Biloxi, D\u2019Iberville, Ocean Springs, and Pascagoula. Enjoy cruise\u2011ins, headline bands and oldies entertainment, a swap meet, the CTC/Vicari Auto Auction, food vendors, and more as car enthusiasts from across the U.S. and beyond gather to celebrate automotive nostalgia on the Coast!",
-      "url": "https://www.coastalmississippi.com/events/cruisin-the-coast-2026-30th-anniversary-event/",
-      "cta": "View Event",
-      "source": "Coastal Mississippi",
-      "timeLabel": "",
       "hasLiveLink": true,
       "linkNote": ""
     },
@@ -2494,6 +2779,32 @@ window.__ATTRACTIONS_FEED__ = {
       "linkNote": ""
     },
     {
+      "date": "2026-10-04",
+      "title": "Long Beach Art And Artisans Market",
+      "location": "Long Beach",
+      "category": "Festival",
+      "description": "The Weekly Art and Artisans Market is held every Sunday on the Harper McCaughan Town Green in Long Beach, MS. All artwork is handmade, homemade, and original!",
+      "url": "https://www.coastalmississippi.com/events/long-beach-art-and-artisans-market/",
+      "cta": "View Event",
+      "source": "Coastal Mississippi",
+      "timeLabel": "",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
+      "date": "2026-10-04",
+      "title": "Cruisin' the Coast 2026 | 30th Anniversary Event",
+      "location": "Pass Christian",
+      "category": "Dining",
+      "description": "Cruisin\u2019 the Coast\u00ae returns to the Mississippi Gulf Coast October 4\u201311, 2026, celebrating its 30th Anniversary as America\u2019s Largest Block Party! This iconic week\u2011long event features thousands of antique, classic, and hot rod vehicles cruising a stunning 30\u2011mile beachside route with stops in Bay St. Louis, Pass Christian, Gulfport, Biloxi, D\u2019Iberville, Ocean Springs, and Pascagoula. Enjoy cruise\u2011ins, headline bands and oldies entertainment, a swap meet, the CTC/Vicari Auto Auction, food vendors, and more as car enthusiasts from across the U.S. and beyond gather to celebrate automotive nostalgia on the Coast!",
+      "url": "https://www.coastalmississippi.com/events/cruisin-the-coast-2026-30th-anniversary-event/",
+      "cta": "View Event",
+      "source": "Coastal Mississippi",
+      "timeLabel": "",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
       "date": "2026-10-05",
       "title": "Cruisin' the Coast",
       "location": "Bay St. Louis",
@@ -2503,6 +2814,32 @@ window.__ATTRACTIONS_FEED__ = {
       "cta": "View Event",
       "source": "Cruisin' the Coast",
       "timeLabel": "Multi-day event",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
+      "date": "2026-10-05",
+      "title": "Cruisin the Coast Parade",
+      "location": "Long Beach",
+      "category": "Festival",
+      "description": "Join us for the Cruisin the Coast Parade down Jeff Davis Ave. The parade will begin at 5:30 pm. To register your vechile for Cruisin the Coast please contact the organization. The first 600 registered vechiles will be in the parade.",
+      "url": "https://www.cityoflongbeachms.info/event-details/cruisin-the-coast-parade-2",
+      "cta": "View Event",
+      "source": "City of Long Beach",
+      "timeLabel": "5:00 PM - 8:30 PM",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
+      "date": "2026-10-05",
+      "title": "Show & Shine Car Show",
+      "location": "Long Beach",
+      "category": "Family",
+      "description": "Join us for the Long Beach Show & Shine Car Show on Monday, October 5th from 9:00 AM \u2013 4:00 PM at the Harper McCaughan Town Green and along Jeff Davis Avenue! This FREE community event will showcase a wide variety of classic cars, trucks, and specialty vehicles. Bring the family, stroll through down",
+      "url": "https://www.cityoflongbeachms.info/event-details/show-shine-car-show",
+      "cta": "View Event",
+      "source": "City of Long Beach",
+      "timeLabel": "9:00 AM - 4:00 PM",
       "hasLiveLink": true,
       "linkNote": ""
     },
@@ -2611,6 +2948,32 @@ window.__ATTRACTIONS_FEED__ = {
       "linkNote": ""
     },
     {
+      "date": "2026-10-08",
+      "title": "Trucks N Tacos",
+      "location": "Long Beach",
+      "category": "Dining",
+      "description": "Official City of Long Beach community event at Harper McCaughan Town Green.",
+      "url": "https://www.cityoflongbeachms.info/event-details/trucks-n-tacos-3",
+      "cta": "View Event",
+      "source": "City of Long Beach",
+      "timeLabel": "9:00 AM - 10:00 PM",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
+      "date": "2026-10-08",
+      "title": "Crusin the Coast",
+      "location": "Pass Christian",
+      "category": "Events",
+      "description": "Official City of Pass Christian community event at Davis Avenue.",
+      "url": "https://pass-christian.com/event/crusin-the-coast/",
+      "cta": "View Event",
+      "source": "City of Pass Christian",
+      "timeLabel": "All day",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
       "date": "2026-10-09",
       "title": "2026 Juried Art Show",
       "location": "Bay St. Louis",
@@ -2715,6 +3078,19 @@ window.__ATTRACTIONS_FEED__ = {
       "linkNote": ""
     },
     {
+      "date": "2026-10-09",
+      "title": "Crusin the Coast",
+      "location": "Pass Christian",
+      "category": "Events",
+      "description": "Official City of Pass Christian community event at Davis Avenue.",
+      "url": "https://pass-christian.com/event/crusin-the-coast/",
+      "cta": "View Event",
+      "source": "City of Pass Christian",
+      "timeLabel": "All day",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
       "date": "2026-10-10",
       "title": "Cruisin' the Coast",
       "location": "Bay St. Louis",
@@ -2780,6 +3156,19 @@ window.__ATTRACTIONS_FEED__ = {
       "linkNote": ""
     },
     {
+      "date": "2026-10-10",
+      "title": "Crusin the Coast",
+      "location": "Pass Christian",
+      "category": "Events",
+      "description": "Official City of Pass Christian community event at Davis Avenue.",
+      "url": "https://pass-christian.com/event/crusin-the-coast/",
+      "cta": "View Event",
+      "source": "City of Pass Christian",
+      "timeLabel": "All day",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
       "date": "2026-10-11",
       "title": "Cruisin' the Coast",
       "location": "Bay St. Louis",
@@ -2799,6 +3188,19 @@ window.__ATTRACTIONS_FEED__ = {
       "category": "Live Music",
       "description": "Join us at Hollywood Casino Gulf Coast at the Hollydeck to enjoy live music, great cocktails, and a scenic view!Fridays | 6 p.m. to 10 p.m.Saturdays | 4 p.m. to 8 p.m. Sundays | 2 p.m. to 6 p.m.See our website for the latest entertainment lineup!",
       "url": "https://www.coastalmississippi.com/events/hollydeck-live-music/",
+      "cta": "View Event",
+      "source": "Coastal Mississippi",
+      "timeLabel": "",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
+      "date": "2026-10-11",
+      "title": "Long Beach Art And Artisans Market",
+      "location": "Long Beach",
+      "category": "Festival",
+      "description": "The Weekly Art and Artisans Market is held every Sunday on the Harper McCaughan Town Green in Long Beach, MS. All artwork is handmade, homemade, and original!",
+      "url": "https://www.coastalmississippi.com/events/long-beach-art-and-artisans-market/",
       "cta": "View Event",
       "source": "Coastal Mississippi",
       "timeLabel": "",
@@ -3144,6 +3546,19 @@ window.__ATTRACTIONS_FEED__ = {
       "linkNote": ""
     },
     {
+      "date": "2026-10-18",
+      "title": "Long Beach Art And Artisans Market",
+      "location": "Long Beach",
+      "category": "Festival",
+      "description": "The Weekly Art and Artisans Market is held every Sunday on the Harper McCaughan Town Green in Long Beach, MS. All artwork is handmade, homemade, and original!",
+      "url": "https://www.coastalmississippi.com/events/long-beach-art-and-artisans-market/",
+      "cta": "View Event",
+      "source": "Coastal Mississippi",
+      "timeLabel": "",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
       "date": "2026-10-20",
       "title": "Jaymoon Yoga | Vinyasa Flow",
       "location": "Gulfport/Biloxi",
@@ -3352,6 +3767,19 @@ window.__ATTRACTIONS_FEED__ = {
       "linkNote": ""
     },
     {
+      "date": "2026-10-25",
+      "title": "Long Beach Art And Artisans Market",
+      "location": "Long Beach",
+      "category": "Festival",
+      "description": "The Weekly Art and Artisans Market is held every Sunday on the Harper McCaughan Town Green in Long Beach, MS. All artwork is handmade, homemade, and original!",
+      "url": "https://www.coastalmississippi.com/events/long-beach-art-and-artisans-market/",
+      "cta": "View Event",
+      "source": "Coastal Mississippi",
+      "timeLabel": "",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
       "date": "2026-10-27",
       "title": "Jaymoon Yoga | Vinyasa Flow",
       "location": "Gulfport/Biloxi",
@@ -3488,6 +3916,19 @@ window.__ATTRACTIONS_FEED__ = {
       "category": "Live Music",
       "description": "Join us at Hollywood Casino Gulf Coast at the Hollydeck to enjoy live music, great cocktails, and a scenic view!Fridays | 6 p.m. to 10 p.m.Saturdays | 4 p.m. to 8 p.m. Sundays | 2 p.m. to 6 p.m.See our website for the latest entertainment lineup!",
       "url": "https://www.coastalmississippi.com/events/hollydeck-live-music/",
+      "cta": "View Event",
+      "source": "Coastal Mississippi",
+      "timeLabel": "",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
+      "date": "2026-11-01",
+      "title": "Long Beach Art And Artisans Market",
+      "location": "Long Beach",
+      "category": "Festival",
+      "description": "The Weekly Art and Artisans Market is held every Sunday on the Harper McCaughan Town Green in Long Beach, MS. All artwork is handmade, homemade, and original!",
+      "url": "https://www.coastalmississippi.com/events/long-beach-art-and-artisans-market/",
       "cta": "View Event",
       "source": "Coastal Mississippi",
       "timeLabel": "",
@@ -3638,12 +4079,51 @@ window.__ATTRACTIONS_FEED__ = {
       "linkNote": ""
     },
     {
+      "date": "2026-11-07",
+      "title": "Veteran's Day Celebration & Parade",
+      "location": "Long Beach",
+      "category": "Festival",
+      "description": "Official City of Long Beach community event at Long Beach.",
+      "url": "https://www.cityoflongbeachms.info/event-details/veterans-day-celebration-parade-2",
+      "cta": "View Event",
+      "source": "City of Long Beach",
+      "timeLabel": "11:00 AM - 4:00 PM",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
+      "date": "2026-11-07",
+      "title": "3rd annual Car Show",
+      "location": "Pass Christian",
+      "category": "Live Music",
+      "description": "Official City of Pass Christian community event at Pass Christian Harbor.",
+      "url": "https://pass-christian.com/event/3rd-annual-car-show/",
+      "cta": "View Event",
+      "source": "City of Pass Christian",
+      "timeLabel": "9:00 AM - 5:00 PM",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
       "date": "2026-11-08",
       "title": "Hollydeck Live Music",
       "location": "Bay St. Louis",
       "category": "Live Music",
       "description": "Join us at Hollywood Casino Gulf Coast at the Hollydeck to enjoy live music, great cocktails, and a scenic view!Fridays | 6 p.m. to 10 p.m.Saturdays | 4 p.m. to 8 p.m. Sundays | 2 p.m. to 6 p.m.See our website for the latest entertainment lineup!",
       "url": "https://www.coastalmississippi.com/events/hollydeck-live-music/",
+      "cta": "View Event",
+      "source": "Coastal Mississippi",
+      "timeLabel": "",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
+      "date": "2026-11-08",
+      "title": "Long Beach Art And Artisans Market",
+      "location": "Long Beach",
+      "category": "Festival",
+      "description": "The Weekly Art and Artisans Market is held every Sunday on the Harper McCaughan Town Green in Long Beach, MS. All artwork is handmade, homemade, and original!",
+      "url": "https://www.coastalmississippi.com/events/long-beach-art-and-artisans-market/",
       "cta": "View Event",
       "source": "Coastal Mississippi",
       "timeLabel": "",
@@ -3885,6 +4365,19 @@ window.__ATTRACTIONS_FEED__ = {
       "linkNote": ""
     },
     {
+      "date": "2026-11-15",
+      "title": "Long Beach Art And Artisans Market",
+      "location": "Long Beach",
+      "category": "Festival",
+      "description": "The Weekly Art and Artisans Market is held every Sunday on the Harper McCaughan Town Green in Long Beach, MS. All artwork is handmade, homemade, and original!",
+      "url": "https://www.coastalmississippi.com/events/long-beach-art-and-artisans-market/",
+      "cta": "View Event",
+      "source": "Coastal Mississippi",
+      "timeLabel": "",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
       "date": "2026-11-17",
       "title": "Jaymoon Yoga | Vinyasa Flow",
       "location": "Gulfport/Biloxi",
@@ -3946,6 +4439,19 @@ window.__ATTRACTIONS_FEED__ = {
       "cta": "View Event",
       "source": "Coastal Mississippi",
       "timeLabel": "",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
+      "date": "2026-11-19",
+      "title": "One Book One Pass \u2013 Sebastian Junger",
+      "location": "Pass Christian",
+      "category": "Events",
+      "description": "Official City of Pass Christian community event at Randolph Center.",
+      "url": "https://pass-christian.com/event/one-book-one-pass-sebastian-junger/",
+      "cta": "View Event",
+      "source": "City of Pass Christian",
+      "timeLabel": "6:30 PM - 8:30 PM",
       "hasLiveLink": true,
       "linkNote": ""
     },
@@ -4034,6 +4540,19 @@ window.__ATTRACTIONS_FEED__ = {
       "category": "Live Music",
       "description": "Join us at Hollywood Casino Gulf Coast at the Hollydeck to enjoy live music, great cocktails, and a scenic view!Fridays | 6 p.m. to 10 p.m.Saturdays | 4 p.m. to 8 p.m. Sundays | 2 p.m. to 6 p.m.See our website for the latest entertainment lineup!",
       "url": "https://www.coastalmississippi.com/events/hollydeck-live-music/",
+      "cta": "View Event",
+      "source": "Coastal Mississippi",
+      "timeLabel": "",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
+      "date": "2026-11-22",
+      "title": "Long Beach Art And Artisans Market",
+      "location": "Long Beach",
+      "category": "Festival",
+      "description": "The Weekly Art and Artisans Market is held every Sunday on the Harper McCaughan Town Green in Long Beach, MS. All artwork is handmade, homemade, and original!",
+      "url": "https://www.coastalmississippi.com/events/long-beach-art-and-artisans-market/",
       "cta": "View Event",
       "source": "Coastal Mississippi",
       "timeLabel": "",
@@ -4158,12 +4677,38 @@ window.__ATTRACTIONS_FEED__ = {
       "linkNote": ""
     },
     {
+      "date": "2026-11-28",
+      "title": "Shop Small Saturday",
+      "location": "Long Beach",
+      "category": "Outdoors",
+      "description": "Spend the day shopping locally around Long Beach!",
+      "url": "https://www.cityoflongbeachms.info/event-details/shop-small-saturday-3",
+      "cta": "View Event",
+      "source": "City of Long Beach",
+      "timeLabel": "11:00 AM - 9:00 PM",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
       "date": "2026-11-29",
       "title": "Hollydeck Live Music",
       "location": "Bay St. Louis",
       "category": "Live Music",
       "description": "Join us at Hollywood Casino Gulf Coast at the Hollydeck to enjoy live music, great cocktails, and a scenic view!Fridays | 6 p.m. to 10 p.m.Saturdays | 4 p.m. to 8 p.m. Sundays | 2 p.m. to 6 p.m.See our website for the latest entertainment lineup!",
       "url": "https://www.coastalmississippi.com/events/hollydeck-live-music/",
+      "cta": "View Event",
+      "source": "Coastal Mississippi",
+      "timeLabel": "",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
+      "date": "2026-11-29",
+      "title": "Long Beach Art And Artisans Market",
+      "location": "Long Beach",
+      "category": "Festival",
+      "description": "The Weekly Art and Artisans Market is held every Sunday on the Harper McCaughan Town Green in Long Beach, MS. All artwork is handmade, homemade, and original!",
+      "url": "https://www.coastalmississippi.com/events/long-beach-art-and-artisans-market/",
       "cta": "View Event",
       "source": "Coastal Mississippi",
       "timeLabel": "",
@@ -4197,6 +4742,19 @@ window.__ATTRACTIONS_FEED__ = {
       "linkNote": ""
     },
     {
+      "date": "2026-12-04",
+      "title": "Christmas in the Pass",
+      "location": "Pass Christian",
+      "category": "Events",
+      "description": "Official City of Pass Christian community event at Downtown Pass Christian.",
+      "url": "https://pass-christian.com/event/christmas-in-the-pass-3/",
+      "cta": "View Event",
+      "source": "City of Pass Christian",
+      "timeLabel": "4:00 PM - 9:00 PM",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
       "date": "2026-12-05",
       "title": "Sugarplum Christmas Parade",
       "location": "Gulfport/Biloxi",
@@ -4206,6 +4764,19 @@ window.__ATTRACTIONS_FEED__ = {
       "cta": "View Event",
       "source": "Coastal Mississippi",
       "timeLabel": "8:00 AM - 10:30 AM",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
+      "date": "2026-12-06",
+      "title": "Long Beach Art And Artisans Market",
+      "location": "Long Beach",
+      "category": "Festival",
+      "description": "The Weekly Art and Artisans Market is held every Sunday on the Harper McCaughan Town Green in Long Beach, MS. All artwork is handmade, homemade, and original!",
+      "url": "https://www.coastalmississippi.com/events/long-beach-art-and-artisans-market/",
+      "cta": "View Event",
+      "source": "Coastal Mississippi",
+      "timeLabel": "",
       "hasLiveLink": true,
       "linkNote": ""
     },
@@ -4314,6 +4885,19 @@ window.__ATTRACTIONS_FEED__ = {
       "linkNote": ""
     },
     {
+      "date": "2026-12-13",
+      "title": "Long Beach Art And Artisans Market",
+      "location": "Long Beach",
+      "category": "Festival",
+      "description": "The Weekly Art and Artisans Market is held every Sunday on the Harper McCaughan Town Green in Long Beach, MS. All artwork is handmade, homemade, and original!",
+      "url": "https://www.coastalmississippi.com/events/long-beach-art-and-artisans-market/",
+      "cta": "View Event",
+      "source": "Coastal Mississippi",
+      "timeLabel": "",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
       "date": "2026-12-15",
       "title": "Christmas in the Air",
       "location": "Gulfport/Biloxi",
@@ -4379,6 +4963,32 @@ window.__ATTRACTIONS_FEED__ = {
       "linkNote": ""
     },
     {
+      "date": "2026-12-19",
+      "title": "45th Annual Pass to Bay Christmas 10K Run",
+      "location": "Pass Christian",
+      "category": "Community",
+      "description": "Official City of Pass Christian community event.",
+      "url": "https://pass-christian.com/event/45th-annual-pass-to-bay-christmas-10k-run/",
+      "cta": "View Event",
+      "source": "City of Pass Christian",
+      "timeLabel": "9:00 AM - 11:00 AM",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
+      "date": "2026-12-20",
+      "title": "Long Beach Art And Artisans Market",
+      "location": "Long Beach",
+      "category": "Festival",
+      "description": "The Weekly Art and Artisans Market is held every Sunday on the Harper McCaughan Town Green in Long Beach, MS. All artwork is handmade, homemade, and original!",
+      "url": "https://www.coastalmississippi.com/events/long-beach-art-and-artisans-market/",
+      "cta": "View Event",
+      "source": "Coastal Mississippi",
+      "timeLabel": "",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
       "date": "2026-12-22",
       "title": "Christmas in the Air",
       "location": "Gulfport/Biloxi",
@@ -4418,6 +5028,19 @@ window.__ATTRACTIONS_FEED__ = {
       "linkNote": ""
     },
     {
+      "date": "2026-12-27",
+      "title": "Long Beach Art And Artisans Market",
+      "location": "Long Beach",
+      "category": "Festival",
+      "description": "The Weekly Art and Artisans Market is held every Sunday on the Harper McCaughan Town Green in Long Beach, MS. All artwork is handmade, homemade, and original!",
+      "url": "https://www.coastalmississippi.com/events/long-beach-art-and-artisans-market/",
+      "cta": "View Event",
+      "source": "Coastal Mississippi",
+      "timeLabel": "",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
       "date": "2026-12-29",
       "title": "Jaymoon Yoga | Vinyasa Flow",
       "location": "Gulfport/Biloxi",
@@ -4444,6 +5067,19 @@ window.__ATTRACTIONS_FEED__ = {
       "linkNote": ""
     },
     {
+      "date": "2027-01-03",
+      "title": "Long Beach Art And Artisans Market",
+      "location": "Long Beach",
+      "category": "Festival",
+      "description": "The Weekly Art and Artisans Market is held every Sunday on the Harper McCaughan Town Green in Long Beach, MS. All artwork is handmade, homemade, and original!",
+      "url": "https://www.coastalmississippi.com/events/long-beach-art-and-artisans-market/",
+      "cta": "View Event",
+      "source": "Coastal Mississippi",
+      "timeLabel": "",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
       "date": "2027-01-06",
       "title": "Gulfport Harbor Farmer's Market",
       "location": "Gulfport/Biloxi",
@@ -4457,12 +5093,51 @@ window.__ATTRACTIONS_FEED__ = {
       "linkNote": ""
     },
     {
+      "date": "2027-01-10",
+      "title": "Long Beach Art And Artisans Market",
+      "location": "Long Beach",
+      "category": "Festival",
+      "description": "The Weekly Art and Artisans Market is held every Sunday on the Harper McCaughan Town Green in Long Beach, MS. All artwork is handmade, homemade, and original!",
+      "url": "https://www.coastalmississippi.com/events/long-beach-art-and-artisans-market/",
+      "cta": "View Event",
+      "source": "Coastal Mississippi",
+      "timeLabel": "",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
       "date": "2027-01-13",
       "title": "Gulfport Harbor Farmer's Market",
       "location": "Gulfport/Biloxi",
       "category": "Festival",
       "description": "Enjoy a variety of fresh, locally sourced items perfect for eating on the spot or taking home to savor later!From seasonal produce to handcrafted goods, the Gulfport Harbor Farmers Market offers a relaxed, Coastal atmosphere where you can shop local and enjoy the flavors of the Coast.",
       "url": "https://www.coastalmississippi.com/events/gulfport-harbor-farmers-market/",
+      "cta": "View Event",
+      "source": "Coastal Mississippi",
+      "timeLabel": "",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
+      "date": "2027-01-16",
+      "title": "Krewe of Waggus",
+      "location": "Pass Christian",
+      "category": "Events",
+      "description": "Official City of Pass Christian community event at Davis Avenue.",
+      "url": "https://pass-christian.com/event/krewe-of-waggus/",
+      "cta": "View Event",
+      "source": "City of Pass Christian",
+      "timeLabel": "2:00 PM - 5:00 PM",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
+      "date": "2027-01-17",
+      "title": "Long Beach Art And Artisans Market",
+      "location": "Long Beach",
+      "category": "Festival",
+      "description": "The Weekly Art and Artisans Market is held every Sunday on the Harper McCaughan Town Green in Long Beach, MS. All artwork is handmade, homemade, and original!",
+      "url": "https://www.coastalmississippi.com/events/long-beach-art-and-artisans-market/",
       "cta": "View Event",
       "source": "Coastal Mississippi",
       "timeLabel": "",
@@ -4496,12 +5171,38 @@ window.__ATTRACTIONS_FEED__ = {
       "linkNote": ""
     },
     {
+      "date": "2027-01-24",
+      "title": "Long Beach Art And Artisans Market",
+      "location": "Long Beach",
+      "category": "Festival",
+      "description": "The Weekly Art and Artisans Market is held every Sunday on the Harper McCaughan Town Green in Long Beach, MS. All artwork is handmade, homemade, and original!",
+      "url": "https://www.coastalmississippi.com/events/long-beach-art-and-artisans-market/",
+      "cta": "View Event",
+      "source": "Coastal Mississippi",
+      "timeLabel": "",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
       "date": "2027-01-27",
       "title": "Gulfport Harbor Farmer's Market",
       "location": "Gulfport/Biloxi",
       "category": "Festival",
       "description": "Enjoy a variety of fresh, locally sourced items perfect for eating on the spot or taking home to savor later!From seasonal produce to handcrafted goods, the Gulfport Harbor Farmers Market offers a relaxed, Coastal atmosphere where you can shop local and enjoy the flavors of the Coast.",
       "url": "https://www.coastalmississippi.com/events/gulfport-harbor-farmers-market/",
+      "cta": "View Event",
+      "source": "Coastal Mississippi",
+      "timeLabel": "",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
+      "date": "2027-01-31",
+      "title": "Long Beach Art And Artisans Market",
+      "location": "Long Beach",
+      "category": "Festival",
+      "description": "The Weekly Art and Artisans Market is held every Sunday on the Harper McCaughan Town Green in Long Beach, MS. All artwork is handmade, homemade, and original!",
+      "url": "https://www.coastalmississippi.com/events/long-beach-art-and-artisans-market/",
       "cta": "View Event",
       "source": "Coastal Mississippi",
       "timeLabel": "",
@@ -4518,6 +5219,32 @@ window.__ATTRACTIONS_FEED__ = {
       "cta": "View Event",
       "source": "Coastal Mississippi",
       "timeLabel": "",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
+      "date": "2027-02-07",
+      "title": "Long Beach Art And Artisans Market",
+      "location": "Long Beach",
+      "category": "Festival",
+      "description": "The Weekly Art and Artisans Market is held every Sunday on the Harper McCaughan Town Green in Long Beach, MS. All artwork is handmade, homemade, and original!",
+      "url": "https://www.coastalmississippi.com/events/long-beach-art-and-artisans-market/",
+      "cta": "View Event",
+      "source": "Coastal Mississippi",
+      "timeLabel": "",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
+      "date": "2027-02-07",
+      "title": "St. Paul\u2019s Carnival Association\u2019s Parade",
+      "location": "Pass Christian",
+      "category": "Festival",
+      "description": "Official City of Pass Christian community event.",
+      "url": "https://pass-christian.com/event/st-pauls-carnival-associations-parade/",
+      "cta": "View Event",
+      "source": "City of Pass Christian",
+      "timeLabel": "All day",
       "hasLiveLink": true,
       "linkNote": ""
     },
@@ -4541,6 +5268,19 @@ window.__ATTRACTIONS_FEED__ = {
       "category": "Festival",
       "description": "Cafe BoneJour presents with Mississippi Gulf Coast Corgis the 4th Annual Krewe of PAWseidon.Please take note that this event may or can be rescheduled due to weather conditions. Back-up event dates are Saturday, February 20th or Sunday, February 21st.",
       "url": "https://www.coastalmississippi.com/events/krewe-of-pawseidon-parade/",
+      "cta": "View Event",
+      "source": "Coastal Mississippi",
+      "timeLabel": "",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
+      "date": "2027-02-14",
+      "title": "Long Beach Art And Artisans Market",
+      "location": "Long Beach",
+      "category": "Festival",
+      "description": "The Weekly Art and Artisans Market is held every Sunday on the Harper McCaughan Town Green in Long Beach, MS. All artwork is handmade, homemade, and original!",
+      "url": "https://www.coastalmississippi.com/events/long-beach-art-and-artisans-market/",
       "cta": "View Event",
       "source": "Coastal Mississippi",
       "timeLabel": "",
@@ -4587,12 +5327,38 @@ window.__ATTRACTIONS_FEED__ = {
       "linkNote": ""
     },
     {
+      "date": "2027-02-21",
+      "title": "Long Beach Art And Artisans Market",
+      "location": "Long Beach",
+      "category": "Festival",
+      "description": "The Weekly Art and Artisans Market is held every Sunday on the Harper McCaughan Town Green in Long Beach, MS. All artwork is handmade, homemade, and original!",
+      "url": "https://www.coastalmississippi.com/events/long-beach-art-and-artisans-market/",
+      "cta": "View Event",
+      "source": "Coastal Mississippi",
+      "timeLabel": "",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
       "date": "2027-02-24",
       "title": "Gulfport Harbor Farmer's Market",
       "location": "Gulfport/Biloxi",
       "category": "Festival",
       "description": "Enjoy a variety of fresh, locally sourced items perfect for eating on the spot or taking home to savor later!From seasonal produce to handcrafted goods, the Gulfport Harbor Farmers Market offers a relaxed, Coastal atmosphere where you can shop local and enjoy the flavors of the Coast.",
       "url": "https://www.coastalmississippi.com/events/gulfport-harbor-farmers-market/",
+      "cta": "View Event",
+      "source": "Coastal Mississippi",
+      "timeLabel": "",
+      "hasLiveLink": true,
+      "linkNote": ""
+    },
+    {
+      "date": "2027-02-28",
+      "title": "Long Beach Art And Artisans Market",
+      "location": "Long Beach",
+      "category": "Festival",
+      "description": "The Weekly Art and Artisans Market is held every Sunday on the Harper McCaughan Town Green in Long Beach, MS. All artwork is handmade, homemade, and original!",
+      "url": "https://www.coastalmississippi.com/events/long-beach-art-and-artisans-market/",
       "cta": "View Event",
       "source": "Coastal Mississippi",
       "timeLabel": "",
